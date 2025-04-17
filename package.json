@@ -1,5 +1,5 @@
 {
-	"name": "runners",
+	"name": "cloudflared-runner",
 	"version": "1.0.0",
 	"description": "",
 	"type": "module",
@@ -10,7 +10,7 @@
 	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"module": "index.ts",
 	"private": true,
 	"devDependencies": {
