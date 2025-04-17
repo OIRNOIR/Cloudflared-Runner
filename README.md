@@ -1,6 +1,7 @@
 # runners
 
-Make sure there is a crontab: `*/5 * * * *`
+Make sure there is a crontab. Run this as root!
+`*/5 * * * * systemd-cat -t "cloudflared-runner" /root/.bun/bin/bun /root/path/to/Cloudflared-Runner/index.ts`
 
 To install dependencies:
 
