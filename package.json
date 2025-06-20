@@ -20,7 +20,7 @@
 		"typescript": "5.8.3"
 	},
 	"dependencies": {
-		"@biomejs/biome": "2.0.0"
+		"@biomejs/biome": "2.0.1"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }
