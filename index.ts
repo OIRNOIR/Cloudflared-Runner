@@ -14,6 +14,7 @@ try {
 		fs.rmSync(path.join(__dirname, "restartNeeded.txt"));
 	}
 } catch (err) {
+	console.error(err);
 	fs.writeFileSync(path.join(__dirname, "restartNeeded.txt"), "RESTART NEEDED");
 	console.log(
 		`Attempted ping at ${String(new Date())} failed. The connection is offline, and a cloudflared restart is needed.`,
