@@ -1,0 +1,49 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.0.4/schema.json",
+	"assist": { "actions": { "source": { "organizeImports": "on" } } },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"suspicious": {
+				"noDoubleEquals": "off",
+				"noGlobalIsNan": "off"
+			},
+			"correctness": {
+				"noUnusedVariables": "error",
+				"noUnusedFunctionParameters": "error"
+			},
+			"style": {
+				"noParameterAssign": "error",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useSelfClosingElements": "error",
+				"useSingleVarDeclarator": "error",
+				"noUnusedTemplateLiteral": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"noUselessElse": "error"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "always"
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "tab",
+		"indentWidth": 1
+	},
+	"files": {
+		"includes": [
+			"**",
+			"!**/bots/Starwars_WS/film.ts",
+			"!**/bots/Wayback_Slowgame/output/",
+			"!**/bots/Wayback_Slowgame/status.json"
+		]
+	}
+}
