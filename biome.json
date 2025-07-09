@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
@@ -7,14 +7,16 @@
 			"recommended": true,
 			"suspicious": {
 				"noDoubleEquals": "off",
-				"noGlobalIsNan": "off"
+				"noGlobalIsNan": "error"
 			},
 			"correctness": {
 				"noUnusedVariables": "error",
-				"noUnusedFunctionParameters": "error"
+				"noUnusedFunctionParameters": "error",
+				"noUnusedImports": "error"
 			},
 			"style": {
 				"noParameterAssign": "error",
+				"noNonNullAssertion": "error",
 				"useAsConstAssertion": "error",
 				"useDefaultParameterLast": "error",
 				"useEnumInitializers": "error",
@@ -29,7 +31,8 @@
 	},
 	"javascript": {
 		"formatter": {
-			"semicolons": "always"
+			"semicolons": "always",
+			"trailingCommas": "none"
 		}
 	},
 	"formatter": {
@@ -39,11 +42,6 @@
 		"indentWidth": 1
 	},
 	"files": {
-		"includes": [
-			"**",
-			"!**/bots/Starwars_WS/film.ts",
-			"!**/bots/Wayback_Slowgame/output/",
-			"!**/bots/Wayback_Slowgame/status.json"
-		]
+		"includes": ["**"]
 	}
 }
