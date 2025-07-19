@@ -22,7 +22,7 @@
 		"typescript": "5.8.3"
 	},
 	"dependencies": {
-		"@types/bun": "1.2.18"
+		"@types/bun": "1.2.19"
 	},
 	"trustedDependencies": [
 		"@biomejs/biome"
