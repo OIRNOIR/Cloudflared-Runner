@@ -16,7 +16,7 @@
 	"module": "index.ts",
 	"private": true,
 	"devDependencies": {
-		"@biomejs/biome": "2.2.0"
+		"@biomejs/biome": "2.2.2"
 	},
 	"peerDependencies": {
 		"typescript": "5.9.2"
