@@ -19,7 +19,7 @@
 		"@biomejs/biome": "2.2.4"
 	},
 	"peerDependencies": {
-		"typescript": "5.9.2"
+		"typescript": "5.9.3"
 	},
 	"dependencies": {
 		"@types/bun": "1.2.23"
