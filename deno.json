@@ -1,5 +1,5 @@
 {
-	"scripts": {
+	"tasks": {
 		"lint": "biome check . --write && deno lint",
 		"style:check": "deno x @biomejs/biome ci . && deno lint",
 		"typecheck": "deno check"
