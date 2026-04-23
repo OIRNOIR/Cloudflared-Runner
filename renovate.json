@@ -9,6 +9,9 @@
 		"replacements:all",
 		"workarounds:all"
 	],
+	"minimumReleaseAge": "3 days",
+	"prCreation": "not-pending",
+	"internalChecksFilter": "strict",
 	"packageRules": [
 		{
 			"matchDatasources": ["npm"],
