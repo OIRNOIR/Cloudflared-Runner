@@ -8,7 +8,7 @@ const restartNeeded = fs.existsSync(path.join(__dirname, "restartNeeded.txt"));
 
 try {
 	await fetch("https://oirnoir.dev/");
-	if (restartNeeded    ) {
+	if (restartNeeded) {
 		console.log(`${String(new Date())} - Back online! Restarting cloudflared...`);
 		exec("systemctl restart cloudflared");
 		fs.rmSync(path.join(__dirname, "restartNeeded.txt"));
